@@ -1,0 +1,15 @@
+app:
+  baseUrl: "this is a base url"
+  myItems: ["itemA", "itemB"]
+backend:
+  baseUrl: "this is backend baseUrl"
+  database:
+    client: "pg"
+    connection: "aloha connection"
+  listen: "listen"
+techdocs:
+  generator: 
+    runIn: "local"
+  
+# » backstage-cli config:check --config ./app-config-12.yaml --strict
+# Loaded config from app-config-12.yaml

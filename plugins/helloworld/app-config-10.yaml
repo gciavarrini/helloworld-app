@@ -1,0 +1,20 @@
+app:
+  baseUrl: "this is a base url"
+  myItems: ["itemA", "itemB"]
+backend:
+  baseUrl: "this is backend baseUrl"
+  database:
+    client: "pg"
+    connection: "aloha connection"
+  listen: "listen"
+techdocs:
+  generator: 
+    randomProperty: "aloha"
+  
+# » backstage-cli config:check --config ./app-config-10.yaml --strict
+# Loaded config from app-config-10.yaml
+
+# Error: Configuration does not match schema
+
+#   Config must have required property 'runIn' { missingProperty=runIn } at /techdocs/generator
+#   Config must NOT have additional properties { additionalProperty=randomProperty } at /techdocs/generator
