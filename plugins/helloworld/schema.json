@@ -1,0 +1,25 @@
+{
+    "$schema": "https://backstage.io/schema/config-v1",
+    "type": "object",
+    "properties": {
+        "app": {
+            "type": "object",
+            "properties": {
+                "baseUrl": {
+                    "type": "string",
+                    "description": "Frontend root URL",
+                    "visibility": "frontend"
+                },
+                "myItems": {
+                    "type": "array",
+                    "description": "array of string items",
+                    "items": {
+                        "type": "string",
+                        "description": "a string item"
+                    }
+                }
+            },
+            "required": ["baseUrl"]
+        }
+    }
+}

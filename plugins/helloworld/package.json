@@ -50,6 +50,8 @@
   },
   "files": [
     "dist",
-    "dist-scalprum"
-  ]
+    "dist-scalprum",
+    "schema.json"
+  ],
+  "configSchema": "schema.json"
 }
