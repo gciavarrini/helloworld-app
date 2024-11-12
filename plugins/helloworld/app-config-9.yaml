@@ -1,0 +1,21 @@
+app:
+  baseUrl: "this is a base url"
+  myItems: ["itemA", "itemB"]
+backend:
+  baseUrl: "this is backend baseUrl"
+  database:
+    client: "pg"
+    connection: "aloha connection"
+  listen: "listen"
+techdocs:
+  generator: "test"
+  
+# ! No way to get hint about `techdocs`.
+# Using this https://backstage.io/docs/features/techdocs/configuration/ as reference 
+
+# » backstage-cli config:check --config ./app-config-9.yaml --strict
+# Loaded config from app-config-9.yaml
+
+# Error: Configuration does not match schema
+
+#   Config must be object { type=object } at /techdocs/generator

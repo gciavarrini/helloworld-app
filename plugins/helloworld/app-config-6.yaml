@@ -1,0 +1,21 @@
+app:
+  baseUrl: "this is a base url"
+  myItems: ["itemA", "itemB"]
+backend:
+  baseUrl: "this is backend baseUrl"
+  database:
+    randomPropertyDb: "aloha"
+  listen: "listen"
+techdocs:
+  randomPropertyTechDocs: "hello"
+
+
+# » backstage-cli config:check --config ./app-config-6.yaml --strict
+# Loaded config from app-config-6.yaml
+
+# Error: Configuration does not match schema
+
+#   Config must have required property 'client' { missingProperty=client } at /backend/database
+#   Config must have required property 'connection' { missingProperty=connection } at /backend/database
+#   Config must NOT have additional properties { additionalProperty=randomPropertyDb } at /backend/database
+#   Config must NOT have additional properties { additionalProperty=randomPropertyTechDocs } at /techdocs

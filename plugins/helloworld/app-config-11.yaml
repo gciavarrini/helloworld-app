@@ -1,0 +1,19 @@
+app:
+  baseUrl: "this is a base url"
+  myItems: ["itemA", "itemB"]
+backend:
+  baseUrl: "this is backend baseUrl"
+  database:
+    client: "pg"
+    connection: "aloha connection"
+  listen: "listen"
+techdocs:
+  generator: 
+    runIn: "aloha"
+  
+# » backstage-cli config:check --config ./app-config-11.yaml --strict
+# Loaded config from app-config-11.yaml
+
+# Error: Configuration does not match schema
+
+#   Config must be equal to one of the allowed values { allowedValues=docker,local } at /techdocs/generator/runIn

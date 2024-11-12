@@ -1,0 +1,20 @@
+app:
+  baseUrl: "this is a base url"
+  myItems: ["itemA", "itemB"]
+backend:
+  baseUrl: "this is backend baseUrl"
+  database:
+    client: "aloha"
+    connection: "aloha connection"
+  listen: "listen"
+techdocs:
+  randomPropertyTechDocs: "hello"
+
+
+# » backstage-cli config:check --config ./app-config-7.yaml --strict
+# Loaded config from app-config-7.yaml
+
+# Error: Configuration does not match schema
+
+#   Config must be equal to one of the allowed values { allowedValues=better-sqlite3,pg,sqlite3 } at /backend/database/client
+#   Config must NOT have additional properties { additionalProperty=randomPropertyTechDocs } at /techdocs

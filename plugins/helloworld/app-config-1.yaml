@@ -1,0 +1,13 @@
+app:
+  baseUrl: "this is a base url"
+  myItems: ["itemA", "itemB"]
+
+
+# » backstage-cli config:check --strict --config ./app-config-1.yaml
+# Loaded config from app-config.yaml
+# Error: Configuration does not match schema
+#   Config must have required property 'backend' { missingProperty=backend } at 
+#   Config must have required property 'techdocs' { missingProperty=techdocs } at 
+
+# » backstage-cli config:check --config ./app-config-1.yaml
+# Loaded config from app-config-1.yaml
